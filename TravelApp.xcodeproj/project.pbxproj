@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		029D7C38238C611600D9FD08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 029D7C36238C611600D9FD08 /* Main.storyboard */; };
 		029D7C3A238C611800D9FD08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 029D7C39238C611800D9FD08 /* Assets.xcassets */; };
 		029D7C3D238C611800D9FD08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 029D7C3B238C611800D9FD08 /* LaunchScreen.storyboard */; };
+		029D7C48238C679700D9FD08 /* LocationInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029D7C47238C679700D9FD08 /* LocationInfoCell.swift */; };
 		C701B3D7C3A9D4C966E56441 /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BFDEE78786194AA95FE9C8 /* Pods_TravelApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		029D7C39238C611800D9FD08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		029D7C3C238C611800D9FD08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		029D7C3E238C611800D9FD08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		029D7C47238C679700D9FD08 /* LocationInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoCell.swift; sourceTree = "<group>"; };
 		541DC59FFF6A3BB19805AF3C /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.debug.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
 		92EE6E5976ED2C9B9AED8E7F /* Pods-TravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.release.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.release.xcconfig"; sourceTree = "<group>"; };
 		A1BFDEE78786194AA95FE9C8 /* Pods_TravelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,14 +63,39 @@
 		029D7C31238C611600D9FD08 /* TravelApp */ = {
 			isa = PBXGroup;
 			children = (
-				029D7C32238C611600D9FD08 /* AppDelegate.swift */,
-				029D7C34238C611600D9FD08 /* ViewController.swift */,
-				029D7C36238C611600D9FD08 /* Main.storyboard */,
+				029D7C46238C64EC00D9FD08 /* Model */,
+				029D7C45238C64DB00D9FD08 /* View */,
+				029D7C44238C64B500D9FD08 /* Controller */,
 				029D7C39238C611800D9FD08 /* Assets.xcassets */,
 				029D7C3B238C611800D9FD08 /* LaunchScreen.storyboard */,
 				029D7C3E238C611800D9FD08 /* Info.plist */,
 			);
 			path = TravelApp;
+			sourceTree = "<group>";
+		};
+		029D7C44238C64B500D9FD08 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				029D7C32238C611600D9FD08 /* AppDelegate.swift */,
+				029D7C34238C611600D9FD08 /* ViewController.swift */,
+				029D7C47238C679700D9FD08 /* LocationInfoCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		029D7C45238C64DB00D9FD08 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				029D7C36238C611600D9FD08 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		029D7C46238C64EC00D9FD08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2F9649CC9F00B8DF45FC0881 /* Frameworks */ = {
@@ -85,7 +112,6 @@
 				541DC59FFF6A3BB19805AF3C /* Pods-TravelApp.debug.xcconfig */,
 				92EE6E5976ED2C9B9AED8E7F /* Pods-TravelApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -204,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029D7C48238C679700D9FD08 /* LocationInfoCell.swift in Sources */,
 				029D7C35238C611600D9FD08 /* ViewController.swift in Sources */,
 				029D7C33238C611600D9FD08 /* AppDelegate.swift in Sources */,
 			);
